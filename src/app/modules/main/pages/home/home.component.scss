@@ -1,0 +1,59 @@
+.container {
+    min-height: calc(100vh - 70px);
+
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel {
+    min-height: 180px;
+    background: grey;
+}
+
+.most-popular-products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .products-grid {
+        display: flex;
+        flex: 1;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        .product {
+            margin: .1em;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+            height: 300px;
+            // border: 2px solid black;
+            transition: background 150ms;
+
+            img {
+                width: 150px;
+                object-fit: contain;
+            }
+            p {
+                margin: 0;
+                margin-top: .5em;
+                padding: 0;
+            }
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 .5em;
+            }
+
+            &:hover {
+                background: lightgray;
+            }
+        }
+    }
+}

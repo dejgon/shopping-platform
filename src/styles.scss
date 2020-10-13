@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: "Roboto", sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    padding: 0.6em 1em;
+    font-size: 16px;
+    background: #e4cc37;
+    color: white;
+    transition: color 150ms;
+    transition: background 150ms;
+
+    &:hover {
+        background: #E18335;
+        color: white;
+    }
+}
